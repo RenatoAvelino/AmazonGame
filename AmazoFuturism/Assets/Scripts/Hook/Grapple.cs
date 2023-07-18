@@ -12,6 +12,9 @@ public class Grapple : MonoBehaviour
     private GameObject hookPrefab;
     [SerializeField]
     private Transform shootTransform;
+    [SerializeField]
+    private float hookVelocity = 5f;
+    [SerializeField] private float hookLifeTime = 8f;
 
     private Hook hook;
     private bool pulling;
@@ -35,6 +38,7 @@ public class Grapple : MonoBehaviour
             shootTransform.LookAt(worldPos2D);
             pulling = false;
             hook = Instantiate(hookPrefab, shootTransform.position, Quaternion.identity).GetComponent<Hook>();
+            hook.Force = hookVelocity;
             hook.Initialize(this, shootTransform);
             StartCoroutine(DestroyHookAfterLifetime());
         }
@@ -51,7 +55,7 @@ public class Grapple : MonoBehaviour
         }
         else
         {
-            rigid.AddForce((hook.transform.position - transform.position).normalized * pullSpeed,
+            rigid.AddForce((hook.transform.position - transform.position).normalized * (pullSpeed / 100),
                 ForceMode.VelocityChange);
         }
     }
@@ -72,7 +76,7 @@ public class Grapple : MonoBehaviour
 
     private IEnumerator DestroyHookAfterLifetime()
     {
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(hookLifeTime);
 
         DestroyHook();
     }

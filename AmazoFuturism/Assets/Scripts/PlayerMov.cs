@@ -10,6 +10,8 @@ public class PlayerMov : MonoBehaviour
     [SerializeField]
     private float runSpeed = 20f;
     [SerializeField]
+    private float sneakSpeed = 1.5f;
+    [SerializeField]
     private float jumpingPower = 7.5f;
     [SerializeField]
     private float jumpingRunning = 10f;
@@ -17,6 +19,8 @@ public class PlayerMov : MonoBehaviour
     private Rigidbody rb;
     [SerializeField]
     private float runDelay = 1f;
+    private float noiseLevel = 5f;
+    private float noiseBase;
 
     private float walkSpd;
     private float delayTimer = 0f;
@@ -24,13 +28,28 @@ public class PlayerMov : MonoBehaviour
     private bool _isWalkingL = false;
     private bool _isRunning = false;
     private bool _isJumping = false;
+    private bool _isSneaking = false;
 
     private float horizontal;
+
+
+    public float NoiseLv
+    {
+        get
+        {
+            return noiseLevel;
+        }
+        set
+        {
+            noiseLevel = value;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         walkSpd = movSpeed;
         delayTimer = 0f;
+        noiseBase = noiseLevel;
     }
 
     // Update is called once per frame
@@ -78,11 +97,30 @@ public class PlayerMov : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            walkSpd = sneakSpeed;
+            _isSneaking = true;
+            Debug.Log("Stealth Enter");
+            Debug.Log("Speed: " + walkSpd);
+        }
+
+        if (Input.GetKeyUp(KeyCode.G))
+        {
+            _isSneaking = false;
+            walkSpd = movSpeed;
+            Debug.Log("Stealth Exit");
+            Debug.Log("Speed: " + walkSpd);
+        }
+
         if (((Time.time - delayTimer) > runDelay) && (_isWalkingL || _isWalkingR))
         {
             _isWalkingL = false;
             _isWalkingR = false;
-            walkSpd = movSpeed;
+            if(!_isSneaking)
+            {
+                walkSpd = movSpeed;
+            }
             //Debug.Log("Reset Walk");
         }
     }
@@ -100,5 +138,10 @@ public class PlayerMov : MonoBehaviour
         {
             _isJumping = false;
         }
+    }
+
+    private void MakeNoise()
+    {
+        //TODO: Noiselate
     }
 }

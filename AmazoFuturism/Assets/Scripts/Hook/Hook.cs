@@ -7,6 +7,12 @@ public class Hook : MonoBehaviour
     [SerializeField]
     private float hookForce = 25f;
 
+    public float Force
+    {
+        get { return hookForce; }
+        set { hookForce = value; }
+    }
+
     private Grapple grappler;
     private Rigidbody rigid;
     private LineRenderer lineRenderer;
