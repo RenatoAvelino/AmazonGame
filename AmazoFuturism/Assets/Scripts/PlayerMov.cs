@@ -21,6 +21,7 @@ public class PlayerMov : MonoBehaviour
     private float runDelay = 1f;
     private float noiseLevel = 5f;
     private float noiseBase;
+    public bool _actived = false;
 
     private float walkSpd;
     private float delayTimer = 0f;
@@ -97,7 +98,7 @@ public class PlayerMov : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             walkSpd = sneakSpeed;
             _isSneaking = true;
@@ -105,12 +106,24 @@ public class PlayerMov : MonoBehaviour
             Debug.Log("Speed: " + walkSpd);
         }
 
-        if (Input.GetKeyUp(KeyCode.G))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             _isSneaking = false;
             walkSpd = movSpeed;
             Debug.Log("Stealth Exit");
             Debug.Log("Speed: " + walkSpd);
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            _actived = true;
+            //Debug.Log("Ativo");
+        }
+
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            _actived = false;
+            //Debug.Log("Inativo");
         }
 
         if (((Time.time - delayTimer) > runDelay) && (_isWalkingL || _isWalkingR))
