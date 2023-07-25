@@ -35,7 +35,7 @@ public class EnemyBase : MonoBehaviour
             if (other.GetComponent<PlayerMov>().NoiseLv >= noiseSensor)
             {
                 //TODO: Oq ele faz ao ouvir o player
-                Debug.Log("Distancia: " + distance);
+                //Debug.Log("Distancia: " + distance);
             }
         }
     }
