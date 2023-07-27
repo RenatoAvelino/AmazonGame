@@ -80,46 +80,66 @@ public class PlayerMov : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if(_isWalking == true && _LoR == false)
-            {
-                //Debug.Log("Apertou dnv");
-                walkSpd = runSpeed;
-                _isWalking = false;
-                _isRunning = true;
-            }
-            else
-            {
-                if(_LoR == true){
+            if(!_isJumping){
+                if(_LoR == false)
+                {
+                    if(_isWalking == true)
+                        {
+                            //Debug.Log("Apertou dnv");
+                            walkSpd = runSpeed;
+                            _isWalking = false;
+                            _isRunning = true;
+                        }
+                    else if(_isWalking == false)
+                        {
+                            delayTimer = Time.time;
+                            _isWalking = true;
+                        }
+                }
+                else if(_LoR == true){
                     _LoR = false;
                     mesh.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
+                    if(_isWalking == false)
+                        {
+                            delayTimer = Time.time;
+                            _isWalking = true;
+                        }
                 }
-                delayTimer = Time.time;
-                _isWalking = true;
+                animator.SetBool("walk", _isWalking);
+                animator.SetBool("run", _isRunning);
             }
-            animator.SetBool("walk", _isWalking);
-            animator.SetBool("run", _isRunning);
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (_isWalking == true && _LoR == true)
-            {
-                //Debug.Log("Apertou dnv");
-                walkSpd = runSpeed;
-                _isWalking = false;
-                _isRunning = true;
-            }
-            else
-            {
-                if(_LoR == false){
+        { 
+            if(!_isJumping){
+                if(_LoR == true)
+                {
+                    if(_isWalking == true)
+                        {
+                            //Debug.Log("Apertou dnv");
+                            walkSpd = runSpeed;
+                            _isWalking = false;
+                            _isRunning = true;
+                        }
+                    else if(_isWalking == false)
+                        {
+                            delayTimer = Time.time;
+                            _isWalking = true;
+                        }
+                }
+                else if(_LoR == false){
                     _LoR = true;
                     mesh.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
+                    if(_isWalking == false)
+                        {
+                            delayTimer = Time.time;
+                            _isWalking = true;
+                        }
                 }
-                delayTimer = Time.time;
-                _isWalking = true;
+                animator.SetBool("walk", _isWalking);
+                animator.SetBool("run", _isRunning);
             }
-            animator.SetBool("walk", _isWalking);
-            animator.SetBool("run", _isRunning);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))

@@ -33,9 +33,9 @@ public class Grapple : MonoBehaviour
         if(hook == null && Input.GetMouseButtonDown(0))
         {
             //StopAllCoroutines();
-            Vector3 worldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 worldPos2D = new Vector3(worldPos3D.x, worldPos3D.y, this.gameObject.transform.position.z);
-            shootTransform.LookAt(worldPos2D);
+            //Vector3 worldPos3D = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //Vector3 worldPos2D = new Vector3(worldPos3D.x, worldPos3D.y, this.gameObject.transform.position.z);
+            //shootTransform.LookAt(worldPos2D);
             pulling = false;
             hook = Instantiate(hookPrefab, shootTransform.position, Quaternion.identity).GetComponent<Hook>();
             hook.Force = hookVelocity;

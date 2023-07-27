@@ -3,7 +3,47 @@ guid: 277cf1134b50afb429d855a337fae5c1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes
+    second: {fileID: 2100000, guid: f4399a4cedbc6c24b853123b031e8a47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes_glass
+    second: {fileID: 2100000, guid: b617ae5f936acfa4fa3cd35de577615e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 0b44e59d4a0426545a380bc570639b2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 94749bb4e3841644e8d0c8dbda913751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 104fc3113256e594bbf74b6fb8fef38e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: d4d75bfd77d9be24ba1a0d9eb622b5cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair.ph
+    second: {fileID: 2100000, guid: 58078279f8940fd40a1d0d45fb9ae901, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin_ph.001
+    second: {fileID: 2100000, guid: f74520f9b51c77a479a7ea88dae279b1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -181,7 +221,7 @@ ModelImporter:
       name: NEW-Run-Jump (55 to ?)
       takeName: NEW-Run-Jump (55 to ?)
       internalID: 4809676429458930920
-      firstFrame: 16
+      firstFrame: 24
       lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
