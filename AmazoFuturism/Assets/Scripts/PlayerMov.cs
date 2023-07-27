@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class PlayerMov : MonoBehaviour
 {
+    Animator animator;
+
+    [SerializeField]
+    private GameObject mesh;
+
     [SerializeField]
     private float movSpeed = 5f;
     [SerializeField]
@@ -25,8 +30,8 @@ public class PlayerMov : MonoBehaviour
 
     private float walkSpd;
     private float delayTimer = 0f;
-    private bool _isWalkingR = false;
-    private bool _isWalkingL = false;
+    private bool _isWalking = false;
+    private bool _LoR = true;
     private bool _isRunning = false;
     private bool _isJumping = false;
     private bool _isSneaking = false;
@@ -48,6 +53,7 @@ public class PlayerMov : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         walkSpd = movSpeed;
         delayTimer = 0f;
         noiseBase = noiseLevel;
@@ -61,41 +67,59 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y == 0)
         {
             float temp = jumpingPower;
-            if(_isRunning) temp = jumpingRunning;
-            rb.velocity = new Vector3(rb.velocity.x, temp, 0);
+            if(_isRunning) {
+                temp = jumpingRunning;
+                rb.velocity = new Vector3(rb.velocity.x, temp, 0);
+            }
+            else{
+                rb.velocity = new Vector3(0, temp, 0);
+            }
             _isJumping = true;
+            animator.SetBool("jump", _isJumping);
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if(_isWalkingL == true)
+            if(_isWalking == true && _LoR == false)
             {
                 //Debug.Log("Apertou dnv");
                 walkSpd = runSpeed;
-                _isWalkingL = false;
+                _isWalking = false;
                 _isRunning = true;
             }
             else
             {
-                _isWalkingL = true;
+                if(_LoR == true){
+                    _LoR = false;
+                    mesh.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
+                }
                 delayTimer = Time.time;
+                _isWalking = true;
             }
+            animator.SetBool("walk", _isWalking);
+            animator.SetBool("run", _isRunning);
         }
 
         if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if (_isWalkingR == true)
+            if (_isWalking == true && _LoR == true)
             {
                 //Debug.Log("Apertou dnv");
                 walkSpd = runSpeed;
-                _isWalkingR = false;
+                _isWalking = false;
                 _isRunning = true;
             }
             else
             {
-                _isWalkingR = true;
+                if(_LoR == false){
+                    _LoR = true;
+                    mesh.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
+                }
                 delayTimer = Time.time;
+                _isWalking = true;
             }
+            animator.SetBool("walk", _isWalking);
+            animator.SetBool("run", _isRunning);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -126,10 +150,9 @@ public class PlayerMov : MonoBehaviour
             //Debug.Log("Inativo");
         }
 
-        if (((Time.time - delayTimer) > runDelay) && (_isWalkingL || _isWalkingR))
+        if (((Time.time - delayTimer) > runDelay) && (_isWalking))
         {
-            _isWalkingL = false;
-            _isWalkingR = false;
+            _isWalking = false;
             if(!_isSneaking)
             {
                 walkSpd = movSpeed;
@@ -144,12 +167,18 @@ public class PlayerMov : MonoBehaviour
 
         if (rb.velocity.x == 0)
         {
+            //_isWalking = false;
             _isRunning = false;
             walkSpd = movSpeed;
+
+            animator.SetBool("walk", _isWalking);
+            animator.SetBool("run", _isRunning);
         }
         if(rb.velocity.y == 0)
         {
             _isJumping = false;
+            animator.SetBool("jump", _isJumping);
+
         }
     }
 

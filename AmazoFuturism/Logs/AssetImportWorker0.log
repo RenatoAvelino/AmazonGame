@@ -15,7 +15,7 @@ C:/Users/User/Unity Projects/AmazonGame/AmazoFuturism
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53908
+52851
 Successfully changed project path to: C:/Users/User/Unity Projects/AmazonGame/AmazoFuturism
 C:/Users/User/Unity Projects/AmazonGame/AmazoFuturism
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/User/Unity Projects/AmazonGame/AmazoFuturism
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [5820] Host "[IP] 192.168.15.6 [Port] 0 [Flags] 2 [Guid] 3990294715 [EditorId] 3990294715 [Version] 1048832 [Id] WindowsEditor(7,MOBABOX-M13) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1716] Host "[IP] 192.168.15.6 [Port] 0 [Flags] 2 [Guid] 3010623732 [EditorId] 3010623732 [Version] 1048832 [Id] WindowsEditor(7,MOBABOX-M13) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [5820] Host "[IP] 192.168.15.6 [Port] 0 [Flags] 2 [Guid] 3990294715 [EditorId] 3990294715 [Version] 1048832 [Id] WindowsEditor(7,MOBABOX-M13) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1716] Host "[IP] 192.168.15.6 [Port] 0 [Flags] 2 [Guid] 3010623732 [EditorId] 3010623732 [Version] 1048832 [Id] WindowsEditor(7,MOBABOX-M13) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 83.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.22f1 (b6c551784ba3)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -67,219 +67,42 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007352 seconds.
+Registered in 0.009005 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.675 seconds
+- Completed reload, in  0.964 seconds
 Domain Reload Profiling:
-	ReloadAssembly (676ms)
-		BeginReloadAssembly (132ms)
+	ReloadAssembly (965ms)
+		BeginReloadAssembly (118ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (442ms)
-			LoadAssemblies (129ms)
+		EndReloadAssembly (588ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (104ms)
+			SetupTypeCache (179ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (261ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (83ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (123ms)
-				ProcessInitializeOnLoadMethodAttributes (44ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005520 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Unity Projects\AmazonGame\AmazoFuturism\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Unity Projects\AmazonGame\AmazoFuturism\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Domain Reload Profiling:
-	ReloadAssembly (952ms)
-		BeginReloadAssembly (118ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (732ms)
-			LoadAssemblies (97ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (324ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3054 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (113.5 KB). Loaded Objects now: 3514.
-Memory consumption went from 107.7 MB to 107.6 MB.
-Total: 2.841900 ms (FindLiveObjects: 0.274400 ms CreateObjectMapping: 0.152800 ms MarkObjects: 2.301100 ms  DeleteObjects: 0.112300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 674244.571271 seconds.
-  path: Assets/Prefabs/PlayerCharacter.prefab
-  artifactKey: Guid(b723142063ef66843b7d295d05744086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerCharacter.prefab using Guid(b723142063ef66843b7d295d05744086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd3ff743be85f0c34891d410fb13003') in 0.165550 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005079 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Unity Projects\AmazonGame\AmazoFuturism\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\User\Unity Projects\AmazonGame\AmazoFuturism\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.184 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1185ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (945ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (335ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (401ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (256ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3049 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.8 KB). Loaded Objects now: 3528.
-Memory consumption went from 124.7 MB to 124.6 MB.
-Total: 3.161500 ms (FindLiveObjects: 0.287000 ms CreateObjectMapping: 0.261600 ms MarkObjects: 2.477200 ms  DeleteObjects: 0.134700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 415.431503 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e8016211f1fbd1befe65a94415a456') in 0.051499 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 279.109181 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5215ba234115c74c2add73a1e8dbf81') in 0.021545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 77.152581 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595f5218aaf923838b3bc2bb9023a782') in 0.019432 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 97.944409 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4308fabe4a25bcf83792131e23c9b776') in 0.018474 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.668510 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f4f758ea58ff2e6ee273254486d314') in 0.020539 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 344.651472 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cade7775f0f2c7158833e98c3f3bbe65') in 0.023395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 338.810105 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763325ae81b300b00a99ab18afcac828') in 0.019935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.312030 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b2618e622804f60687cc793d7a1214') in 0.020331 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.449924 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a8906c51a701cb635544c337b79fc2') in 0.019888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.784586 seconds.
-  path: Assets/Models/Animation Controlers/Protagonista.controller
-  artifactKey: Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Animation Controlers/Protagonista.controller using Guid(e6c9ffa05e3fa6b4a8889ec8708c7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8e8d0f6ec19f95fe59c8a200c1bf48') in 0.019574 seconds 
+Registered in 0.005883 seconds.

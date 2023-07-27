@@ -123,7 +123,7 @@ ModelImporter:
       name: NEW-Stand-Jump (40-50)
       takeName: NEW-Stand-Jump (40-50)
       internalID: 5530844661706547745
-      firstFrame: 1
+      firstFrame: 10
       lastFrame: 49
       wrapMode: 0
       orientationOffsetY: 0
@@ -152,8 +152,8 @@ ModelImporter:
       name: NEW-Run (40 to 20)
       takeName: NEW-Run (40 to 20)
       internalID: -8002133449413896063
-      firstFrame: 1
-      lastFrame: 46
+      firstFrame: 6
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -181,8 +181,8 @@ ModelImporter:
       name: NEW-Run-Jump (55 to ?)
       takeName: NEW-Run-Jump (55 to ?)
       internalID: 4809676429458930920
-      firstFrame: 1
-      lastFrame: 61
+      firstFrame: 16
+      lastFrame: 55
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -210,8 +210,8 @@ ModelImporter:
       name: NEW-Run-Stop
       takeName: NEW-Run-Stop (30)
       internalID: 5688324435320664670
-      firstFrame: 1
-      lastFrame: 42
+      firstFrame: 4
+      lastFrame: 34
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -268,8 +268,8 @@ ModelImporter:
       name: NEW-Crouch-Walk
       takeName: NEW-Crouch-Walk (40)
       internalID: 2569952268816872947
-      firstFrame: 1
-      lastFrame: 65
+      firstFrame: 16
+      lastFrame: 52
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -413,8 +413,8 @@ ModelImporter:
       name: NEW-Bow-Draw
       takeName: NEW-Bow-Draw
       internalID: -2059454212068526831
-      firstFrame: 1
-      lastFrame: 79
+      firstFrame: 44
+      lastFrame: 50
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -442,8 +442,8 @@ ModelImporter:
       name: NEW-Bow-Shoot
       takeName: NEW-Bow-Shoot
       internalID: -3351727898516712021
-      firstFrame: 1
-      lastFrame: 59
+      firstFrame: 24
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

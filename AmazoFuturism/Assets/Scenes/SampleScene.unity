@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &570461003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2629525297300871317, guid: b723142063ef66843b7d295d05744086, type: 3}
+  m_PrefabInstance: {fileID: 2935390943451457636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &646402534
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,9 +686,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2935390944283984965, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: mesh
+      value: 
+      objectReference: {fileID: 570461003}
+    - target: {fileID: 2935390944283984965, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: jumpingPower
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2935390944283984965, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: jumpingRunning
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2935390944283985019, guid: b723142063ef66843b7d295d05744086, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516266034134567224, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516266034134567224, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516266034134567224, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516266034134567231, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516266034134567231, guid: b723142063ef66843b7d295d05744086, type: 3}
+      propertyPath: field of view
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b723142063ef66843b7d295d05744086, type: 3}
